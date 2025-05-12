@@ -34,9 +34,9 @@ const Navbar = () => {
   const getNavbarStyles = () => {
     if (isHomePage) {
       if (isScrolled) {
-        return 'bg-white shadow-md py-3 border-b-2 border-spa-blue';
+        return 'bg-white bg-opacity-80 backdrop-blur-sm shadow-md py-3';
       }
-      return 'bg-spa-blue-light bg-opacity-80 backdrop-blur-sm py-5 shadow-lg';
+      return 'bg-black bg-opacity-10 backdrop-blur-sm py-5';
     }
     return isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5';
   };
@@ -45,7 +45,7 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${getNavbarStyles()}`}>
       <div className="container-custom flex justify-between items-center">
         <NavLink to="/" className="flex items-center">
-          <h1 className={`font-serif text-2xl md:text-3xl font-bold ${isHomePage && !isScrolled ? 'text-spa-text' : 'text-spa-text'}`}>
+          <h1 className={`font-serif text-2xl md:text-3xl font-bold ${isHomePage && !isScrolled ? 'text-white' : 'text-spa-text'}`}>
             DevPorto<span className="text-spa-blue-dark">Spa</span>
           </h1>
         </NavLink>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 `font-medium text-lg transition-colors ${
                   isActive 
                     ? 'text-spa-blue-dark' 
-                    : `${isHomePage && !isScrolled ? 'text-spa-text hover:text-white' : 'text-spa-text hover:text-spa-blue'}`
+                    : `${isHomePage && !isScrolled ? 'text-white hover:text-spa-blue-light' : 'text-spa-text hover:text-spa-blue'}`
                 }`
               }
             >
@@ -77,7 +77,7 @@ const Navbar = () => {
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-spa-text"
+          className={`md:hidden ${isHomePage && !isScrolled ? 'text-white' : 'text-spa-text'}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -86,7 +86,7 @@ const Navbar = () => {
       
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className={`md:hidden ${isHomePage ? 'bg-spa-blue-light bg-opacity-95' : 'bg-white'} absolute top-full left-0 w-full shadow-md py-4 animate-fade-in`}>
+        <nav className={`md:hidden ${isHomePage ? 'bg-black bg-opacity-70' : 'bg-white'} absolute top-full left-0 w-full shadow-md py-4 animate-fade-in`}>
           <div className="container-custom flex flex-col space-y-4">
             {navLinks.map((link) => (
               <NavLink
@@ -95,7 +95,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) => 
                   `font-medium text-lg py-2 transition-colors ${
-                    isActive ? 'text-spa-blue-dark' : 'text-spa-text hover:text-spa-blue'
+                    isActive ? 'text-spa-blue-dark' : `${isHomePage ? 'text-white hover:text-spa-blue-light' : 'text-spa-text hover:text-spa-blue'}`
                   }`
                 }
               >
