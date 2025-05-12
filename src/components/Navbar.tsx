@@ -1,11 +1,13 @@
 
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,11 +31,21 @@ const Navbar = () => {
     { name: 'Contato', path: '/contact' }
   ];
 
+  const getNavbarStyles = () => {
+    if (isHomePage) {
+      if (isScrolled) {
+        return 'bg-white shadow-md py-3 border-b-2 border-spa-blue';
+      }
+      return 'bg-spa-blue-light bg-opacity-80 backdrop-blur-sm py-5 shadow-lg';
+    }
+    return isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5';
+  };
+
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${getNavbarStyles()}`}>
       <div className="container-custom flex justify-between items-center">
         <NavLink to="/" className="flex items-center">
-          <h1 className="text-spa-text font-serif text-2xl md:text-3xl font-bold">
+          <h1 className={`font-serif text-2xl md:text-3xl font-bold ${isHomePage && !isScrolled ? 'text-spa-text' : 'text-spa-text'}`}>
             DevPorto<span className="text-spa-blue-dark">Spa</span>
           </h1>
         </NavLink>
@@ -46,7 +58,9 @@ const Navbar = () => {
               to={link.path}
               className={({ isActive }) => 
                 `font-medium text-lg transition-colors ${
-                  isActive ? 'text-spa-blue-dark' : 'text-spa-text hover:text-spa-blue'
+                  isActive 
+                    ? 'text-spa-blue-dark' 
+                    : `${isHomePage && !isScrolled ? 'text-spa-text hover:text-white' : 'text-spa-text hover:text-spa-blue'}`
                 }`
               }
             >
@@ -55,7 +69,7 @@ const Navbar = () => {
           ))}
           <NavLink 
             to="/contact#booking" 
-            className="btn-primary"
+            className={`${isHomePage && !isScrolled ? 'bg-spa-blue-dark hover:bg-opacity-90 text-white' : 'btn-primary'} transition-all duration-300`}
           >
             Agendar
           </NavLink>
@@ -72,7 +86,7 @@ const Navbar = () => {
       
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="md:hidden bg-white absolute top-full left-0 w-full shadow-md py-4 animate-fade-in">
+        <nav className={`md:hidden ${isHomePage ? 'bg-spa-blue-light bg-opacity-95' : 'bg-white'} absolute top-full left-0 w-full shadow-md py-4 animate-fade-in`}>
           <div className="container-custom flex flex-col space-y-4">
             {navLinks.map((link) => (
               <NavLink
@@ -90,7 +104,7 @@ const Navbar = () => {
             ))}
             <NavLink 
               to="/contact#booking" 
-              className="btn-primary text-center"
+              className={`${isHomePage ? 'bg-spa-blue-dark hover:bg-opacity-90 text-white' : 'btn-primary'} text-center`}
               onClick={() => setIsOpen(false)}
             >
               Agendar
