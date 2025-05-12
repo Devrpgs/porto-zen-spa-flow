@@ -8,16 +8,16 @@ const BookingCTA = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-spa-text mb-4">
-              Ready to Experience Deep Relaxation?
+              Pronto para Experimentar o Relaxamento Profundo?
             </h2>
             <p className="text-spa-text-light text-lg mb-8">
-              Take the first step towards a more relaxed you. Book your appointment today and enjoy our professional massage services.
+              Dê o primeiro passo para um estado mais relaxado. Agende sua consulta hoje e desfrute dos nossos serviços profissionais de massagem.
             </p>
             <NavLink 
               to="/contact#booking" 
               className="btn-primary inline-block"
             >
-              Book Your Appointment
+              Agendar sua Consulta
             </NavLink>
           </div>
           
@@ -25,7 +25,7 @@ const BookingCTA = () => {
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop" 
-                alt="Spa relaxation" 
+                alt="Relaxamento no spa" 
                 className="w-full h-80 object-cover object-center"
               />
             </div>
@@ -44,10 +44,10 @@ const BookingCTA = () => {
                     </svg>
                   ))}
                 </div>
-                <span className="ml-2 text-sm text-spa-text-light">Over 500 5-star reviews</span>
+                <span className="ml-2 text-sm text-spa-text-light">Mais de 500 avaliações 5 estrelas</span>
               </div>
               <p className="text-spa-text font-medium italic">
-                "The best massage experience I've ever had. Professional staff and amazing atmosphere."
+                "A melhor experiência de massagem que já tive. Equipe profissional e ambiente incrível."
               </p>
             </div>
           </div>

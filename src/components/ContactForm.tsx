@@ -31,8 +31,8 @@ const ContactForm = () => {
     // Simulate API call
     setTimeout(() => {
       toast({
-        title: "Message Sent!",
-        description: "We've received your message and will get back to you soon.",
+        title: "Mensagem Enviada!",
+        description: "Recebemos sua mensagem e entraremos em contato em breve.",
       });
       
       // Reset form
@@ -53,14 +53,14 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-spa-text mb-1">
-            Full Name
+            Nome Completo
           </label>
           <Input
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Your name"
+            placeholder="Seu nome"
             required
             className="w-full"
           />
@@ -68,7 +68,7 @@ const ContactForm = () => {
         
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-spa-text mb-1">
-            Email Address
+            Endereço de Email
           </label>
           <Input
             id="email"
@@ -76,7 +76,7 @@ const ContactForm = () => {
             type="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="your@email.com"
+            placeholder="seu@email.com"
             required
             className="w-full"
           />
@@ -86,7 +86,7 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-spa-text mb-1">
-            Phone Number
+            Número de Telefone
           </label>
           <Input
             id="phone"
@@ -94,21 +94,21 @@ const ContactForm = () => {
             type="tel"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Your phone number"
+            placeholder="Seu número de telefone"
             className="w-full"
           />
         </div>
         
         <div>
           <label htmlFor="subject" className="block text-sm font-medium text-spa-text mb-1">
-            Subject
+            Assunto
           </label>
           <Input
             id="subject"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Subject of your message"
+            placeholder="Assunto da sua mensagem"
             required
             className="w-full"
           />
@@ -117,21 +117,21 @@ const ContactForm = () => {
       
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-spa-text mb-1">
-          Message
+          Mensagem
         </label>
         <Textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Type your message here..."
+          placeholder="Digite sua mensagem aqui..."
           required
           className="min-h-[150px] w-full"
         />
       </div>
       
       <Button type="submit" disabled={isSubmitting} className="bg-spa-blue hover:bg-spa-blue-dark text-white">
-        {isSubmitting ? 'Sending...' : 'Send Message'}
+        {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
       </Button>
     </form>
   );

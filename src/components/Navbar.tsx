@@ -23,10 +23,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Início', path: '/' },
+    { name: 'Serviços', path: '/services' },
+    { name: 'Sobre', path: '/about' },
+    { name: 'Contato', path: '/contact' }
   ];
 
   return (
@@ -57,7 +57,7 @@ const Navbar = () => {
             to="/contact#booking" 
             className="btn-primary"
           >
-            Book Now
+            Agendar
           </NavLink>
         </nav>
         
@@ -93,7 +93,7 @@ const Navbar = () => {
               className="btn-primary text-center"
               onClick={() => setIsOpen(false)}
             >
-              Book Now
+              Agendar
             </NavLink>
           </div>
         </nav>

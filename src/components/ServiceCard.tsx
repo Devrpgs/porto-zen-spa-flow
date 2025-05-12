@@ -37,13 +37,13 @@ const ServiceCard = ({ title, description, image, duration, price, link }: Servi
             to={link}
             className="text-spa-blue-dark font-medium hover:text-spa-blue transition-colors"
           >
-            Learn More
+            Saiba Mais
           </NavLink>
           <NavLink 
             to="/contact#booking" 
             className="btn-outline text-sm"
           >
-            Book Now
+            Agendar
           </NavLink>
         </div>
       </div>

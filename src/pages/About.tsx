@@ -7,73 +7,73 @@ const About = () => {
   const teamMembers = [
     {
       name: "Ana Silva",
-      role: "Lead Massage Therapist",
+      role: "Massagista Principal",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
-      bio: "With over 15 years of experience, Ana specializes in therapeutic massage techniques that address chronic pain and tension.",
-      specialties: ["Deep Tissue", "Sports Massage", "Myofascial Release"]
+      bio: "Com mais de 15 anos de experiência, Ana é especializada em técnicas de massagem terapêutica que tratam dores crônicas e tensão.",
+      specialties: ["Massagem Profunda", "Massagem Desportiva", "Liberação Miofascial"]
     },
     {
       name: "Marco Oliveira",
-      role: "Senior Massage Therapist",
+      role: "Massagista Sênior",
       image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1974&auto=format&fit=crop",
-      bio: "Marco combines traditional massage techniques with modern approaches to create personalized relaxation experiences.",
-      specialties: ["Swedish Massage", "Hot Stone Therapy", "Aromatherapy"]
+      bio: "Marco combina técnicas tradicionais de massagem com abordagens modernas para criar experiências personalizadas de relaxamento.",
+      specialties: ["Massagem Sueca", "Terapia com Pedras Quentes", "Aromaterapia"]
     },
     {
       name: "Sofia Costa",
-      role: "Wellness Specialist",
+      role: "Especialista em Bem-Estar",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-      bio: "Sofia is passionate about holistic wellness and specializes in treatments that nurture both body and mind.",
-      specialties: ["Prenatal Massage", "Reflexology", "Meditation Guidance"]
+      bio: "Sofia é apaixonada por bem-estar holístico e especializada em tratamentos que nutrem tanto o corpo quanto a mente.",
+      specialties: ["Massagem Pré-natal", "Reflexologia", "Orientação de Meditação"]
     },
     {
       name: "Carlos Mendes",
-      role: "Massage Therapist",
+      role: "Terapeuta de Massagem",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
-      bio: "Carlos focuses on athletic recovery and performance enhancement, working with athletes of all levels.",
-      specialties: ["Sports Recovery", "Trigger Point Therapy", "Injury Rehabilitation"]
+      bio: "Carlos se concentra na recuperação atlética e melhoria de desempenho, trabalhando com atletas de todos os níveis.",
+      specialties: ["Recuperação Esportiva", "Terapia de Pontos-Gatilho", "Reabilitação de Lesões"]
     }
   ];
   
   const milestones = [
     {
       year: "2007",
-      title: "Our Beginning",
-      description: "DevPortoSpa was founded with a mission to provide exceptional massage therapy in a serene environment."
+      title: "Nosso Início",
+      description: "DevPortoSpa foi fundado com a missão de fornecer terapia de massagem excepcional em um ambiente sereno."
     },
     {
       year: "2012",
-      title: "Expansion",
-      description: "We expanded our services and facility to accommodate our growing clientele and team."
+      title: "Expansão",
+      description: "Expandimos nossos serviços e instalações para acomodar nossa clientela e equipe crescentes."
     },
     {
       year: "2016",
-      title: "Award Recognition",
-      description: "Recognized as Porto's Best Spa and Wellness Center by the Local Business Association."
+      title: "Reconhecimento",
+      description: "Reconhecido como o Melhor Spa e Centro de Bem-Estar do Porto pela Associação de Negócios Locais."
     },
     {
       year: "2021",
-      title: "New Techniques",
-      description: "Introduced innovative massage techniques and treatments based on the latest research."
+      title: "Novas Técnicas",
+      description: "Introduzimos técnicas inovadoras de massagem e tratamentos baseados nas pesquisas mais recentes."
     }
   ];
 
   const values = [
     {
-      title: "Excellence",
-      description: "We strive for excellence in every treatment, ensuring the highest quality experience."
+      title: "Excelência",
+      description: "Buscamos a excelência em cada tratamento, garantindo uma experiência da mais alta qualidade."
     },
     {
-      title: "Personalization",
-      description: "We tailor each service to meet the unique needs of every client."
+      title: "Personalização",
+      description: "Adaptamos cada serviço para atender às necessidades únicas de cada cliente."
     },
     {
-      title: "Continuous Learning",
-      description: "Our team regularly updates their skills with the latest techniques and research."
+      title: "Aprendizado Contínuo",
+      description: "Nossa equipe atualiza regularmente suas habilidades com as técnicas e pesquisas mais recentes."
     },
     {
-      title: "Holistic Approach",
-      description: "We believe in treating the whole person—mind, body, and spirit."
+      title: "Abordagem Holística",
+      description: "Acreditamos em tratar a pessoa inteira—mente, corpo e espírito."
     }
   ];
 
@@ -83,10 +83,10 @@ const About = () => {
       <section className="bg-spa-blue-light py-16 md:py-24">
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-spa-text mb-4">
-            About Us
+            Sobre Nós
           </h1>
           <p className="text-xl text-spa-text-light max-w-3xl">
-            Learn about our journey, our team, and our dedication to helping you achieve wellness and relaxation.
+            Conheça nossa jornada, nossa equipe e nossa dedicação em ajudar você a alcançar bem-estar e relaxamento.
           </p>
         </div>
       </section>
@@ -97,27 +97,27 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-                Our Story
+                Nossa História
               </h2>
               <p className="text-spa-text-light mb-4">
-                Founded in 2007, DevPortoSpa began with a simple mission: to create a sanctuary of peace and healing in the heart of Porto. What started as a small studio with just two therapists has grown into a premier wellness destination.
+                Fundado em 2007, o DevPortoSpa começou com uma missão simples: criar um santuário de paz e cura no coração do Porto. O que começou como um pequeno estúdio com apenas dois terapeutas cresceu e se tornou um destino de bem-estar de primeira linha.
               </p>
               <p className="text-spa-text-light mb-4">
-                Our founder, Teresa Almeida, envisioned a space where traditional massage techniques would meet modern approaches to wellness, creating experiences that nurture both body and mind.
+                Nossa fundadora, Teresa Almeida, imaginou um espaço onde técnicas tradicionais de massagem se encontrariam com abordagens modernas de bem-estar, criando experiências que nutrem tanto o corpo quanto a mente.
               </p>
               <p className="text-spa-text-light mb-6">
-                Today, we continue to uphold her vision, constantly evolving our services while staying true to our core values of excellence, personalization, and holistic care.
+                Hoje, continuamos a defender sua visão, evoluindo constantemente nossos serviços enquanto permanecemos fiéis aos nossos valores fundamentais de excelência, personalização e cuidado holístico.
               </p>
               
               <div className="flex items-center">
                 <img 
                   src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop" 
-                  alt="Founder" 
+                  alt="Fundadora" 
                   className="w-16 h-16 object-cover rounded-full border-2 border-spa-blue"
                 />
                 <div className="ml-4">
                   <p className="font-serif font-semibold text-spa-text">Teresa Almeida</p>
-                  <p className="text-sm text-spa-text-light">Founder & Director</p>
+                  <p className="text-sm text-spa-text-light">Fundadora & Diretora</p>
                 </div>
               </div>
             </div>
@@ -125,12 +125,12 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               <img 
                 src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=1974&auto=format&fit=crop" 
-                alt="Spa atmosphere" 
+                alt="Ambiente do spa" 
                 className="rounded-lg shadow-md w-full h-full object-cover"
               />
               <img 
                 src="https://images.unsplash.com/photo-1620733723572-11c53f73a416?q=80&w=1974&auto=format&fit=crop" 
-                alt="Massage treatment" 
+                alt="Tratamento de massagem" 
                 className="rounded-lg shadow-md w-full h-full object-cover mt-8"
               />
             </div>
@@ -143,10 +143,10 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-              Our Core Values
+              Nossos Valores Fundamentais
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              These principles guide everything we do at DevPortoSpa, from how we design our treatments to how we interact with our clients.
+              Estes princípios orientam tudo o que fazemos no DevPortoSpa, desde como projetamos nossos tratamentos até como interagimos com nossos clientes.
             </p>
           </div>
           
@@ -169,10 +169,10 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-              Our Journey
+              Nossa Jornada
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Key milestones in our history of providing exceptional wellness services.
+              Marcos importantes em nossa história de fornecimento de serviços excepcionais de bem-estar.
             </p>
           </div>
           
@@ -213,10 +213,10 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-              Meet Our Expert Team
+              Conheça Nossa Equipe de Especialistas
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Our highly trained professionals are dedicated to providing exceptional experiences tailored to your unique needs.
+              Nossos profissionais altamente treinados são dedicados a proporcionar experiências excepcionais adaptadas às suas necessidades únicas.
             </p>
           </div>
           
@@ -233,10 +233,10 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-              Our Facility
+              Nossas Instalações
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Designed with your comfort and relaxation in mind, our spa features top-quality amenities in a serene environment.
+              Projetadas com seu conforto e relaxamento em mente, nossas instalações apresentam comodidades de alta qualidade em um ambiente sereno.
             </p>
           </div>
           
@@ -244,33 +244,33 @@ const About = () => {
             <div className="overflow-hidden rounded-lg shadow-md">
               <img 
                 src="https://images.unsplash.com/photo-1556760544-74068565f05c?q=80&w=1974&auto=format&fit=crop" 
-                alt="Reception area" 
+                alt="Área de recepção" 
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
               <div className="p-4">
-                <h3 className="font-serif font-semibold text-spa-text">Welcoming Reception</h3>
+                <h3 className="font-serif font-semibold text-spa-text">Recepção Acolhedora</h3>
               </div>
             </div>
             
             <div className="overflow-hidden rounded-lg shadow-md">
               <img 
                 src="https://images.unsplash.com/photo-1629195896116-8a1148e0ea89?q=80&w=1975&auto=format&fit=crop" 
-                alt="Treatment room" 
+                alt="Sala de tratamento" 
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
               <div className="p-4">
-                <h3 className="font-serif font-semibold text-spa-text">Peaceful Treatment Rooms</h3>
+                <h3 className="font-serif font-semibold text-spa-text">Salas de Tratamento Tranquilas</h3>
               </div>
             </div>
             
             <div className="overflow-hidden rounded-lg shadow-md">
               <img 
                 src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop" 
-                alt="Relaxation area" 
+                alt="Área de relaxamento" 
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
               <div className="p-4">
-                <h3 className="font-serif font-semibold text-spa-text">Serene Relaxation Lounge</h3>
+                <h3 className="font-serif font-semibold text-spa-text">Lounge de Relaxamento Sereno</h3>
               </div>
             </div>
           </div>

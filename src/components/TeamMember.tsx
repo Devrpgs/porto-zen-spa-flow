@@ -23,7 +23,7 @@ const TeamMember = ({ name, role, image, bio, specialties }: TeamMemberProps) =>
         <p className="text-spa-text-light mb-4">{bio}</p>
         
         <div>
-          <h4 className="font-medium text-spa-text mb-2">Specialties:</h4>
+          <h4 className="font-medium text-spa-text mb-2">Especialidades:</h4>
           <div className="flex flex-wrap gap-2">
             {specialties.map((specialty, index) => (
               <span 

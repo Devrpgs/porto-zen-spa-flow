@@ -8,24 +8,24 @@ import { CheckCircle } from "lucide-react";
 const Index = () => {
   const featuredServices = [
     {
-      title: "Relaxation Massage",
-      description: "Gentle strokes designed to relax your muscles and mind, relieving tension and promoting overall well-being.",
+      title: "Massagem Relaxante",
+      description: "Movimentos suaves projetados para relaxar seus músculos e mente, aliviando a tensão e promovendo o bem-estar geral.",
       image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=1974&auto=format&fit=crop",
       duration: "60 min",
       price: "€80",
       link: "/services"
     },
     {
-      title: "Deep Tissue Massage",
-      description: "Targets deeper layers of muscles to address chronic pain and tension, ideal for those with persistent muscle problems.",
+      title: "Massagem Terapêutica",
+      description: "Atinge camadas mais profundas dos músculos para tratar dores crônicas e tensão, ideal para aqueles com problemas musculares persistentes.",
       image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1770&auto=format&fit=crop",
       duration: "75 min",
       price: "€95",
       link: "/services"
     },
     {
-      title: "Hot Stone Therapy",
-      description: "Uses heated stones to enhance relaxation, ease muscle tension and improve blood flow throughout the body.",
+      title: "Terapia com Pedras Quentes",
+      description: "Utiliza pedras aquecidas para aumentar o relaxamento, aliviar a tensão muscular e melhorar o fluxo sanguíneo por todo o corpo.",
       image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
       duration: "90 min",
       price: "€110",
@@ -36,37 +36,37 @@ const Index = () => {
   const testimonials = [
     {
       name: "Maria Santos",
-      quote: "DevPortoSpa has been my go-to spa for years. The atmosphere is serene and the massage therapists are incredibly skilled. I always leave feeling refreshed and renewed.",
+      quote: "O DevPortoSpa tem sido meu spa preferido por anos. O ambiente é sereno e os massagistas são incrivelmente habilidosos. Sempre saio me sentindo revigorada e renovada.",
       rating: 5
     },
     {
       name: "João Silva",
-      quote: "The deep tissue massage was exactly what I needed for my back pain. The therapist was attentive to my needs and the results were amazing. Highly recommended!",
+      quote: "A massagem terapêutica era exatamente o que eu precisava para minha dor nas costas. O terapeuta estava atento às minhas necessidades e os resultados foram surpreendentes. Altamente recomendado!",
       rating: 5
     },
     {
       name: "Sophia Costa",
-      quote: "From the moment you walk in, the peaceful ambience envelops you. The hot stone therapy was a life-changing experience. I'll definitely be back!",
+      quote: "Desde o momento em que você entra, o ambiente tranquilo te envolve. A terapia com pedras quentes foi uma experiência transformadora. Certamente voltarei!",
       rating: 4
     }
   ];
   
   const benefits = [
     {
-      title: "Stress Relief",
-      description: "Our therapies are designed to reduce stress and promote relaxation, helping you find inner peace."
+      title: "Alívio do Estresse",
+      description: "Nossas terapias são projetadas para reduzir o estresse e promover o relaxamento, ajudando você a encontrar paz interior."
     },
     {
-      title: "Pain Management",
-      description: "Targeted techniques help alleviate chronic pain and muscular tension for lasting relief."
+      title: "Controle da Dor",
+      description: "Técnicas específicas ajudam a aliviar dores crônicas e tensão muscular para um alívio duradouro."
     },
     {
-      title: "Improved Sleep",
-      description: "Regular massages can help improve sleep quality and combat insomnia for better rest."
+      title: "Melhora do Sono",
+      description: "Massagens regulares podem ajudar a melhorar a qualidade do sono e combater a insônia para um descanso melhor."
     },
     {
-      title: "Enhanced Mood",
-      description: "Experience increased release of endorphins that elevate your mood and overall well-being."
+      title: "Humor Elevado",
+      description: "Experimente o aumento da liberação de endorfinas que elevam seu humor e bem-estar geral."
     }
   ];
 
@@ -78,9 +78,9 @@ const Index = () => {
       <section className="bg-spa-neutral section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-spa-text mb-4">Our Featured Services</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-spa-text mb-4">Nossos Serviços em Destaque</h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Experience our most popular therapeutic treatments designed to rejuvenate your body and calm your mind.
+              Experimente nossos tratamentos terapêuticos mais populares, projetados para rejuvenescer seu corpo e acalmar sua mente.
             </p>
           </div>
           
@@ -92,7 +92,7 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <a href="/services" className="btn-outline inline-block">
-              View All Services
+              Ver Todos os Serviços
             </a>
           </div>
         </div>
@@ -104,10 +104,10 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-spa-text mb-4">
-                Transform Your Well-being With Our Expert Care
+                Transforme Seu Bem-Estar Com Nossos Cuidados Especializados
               </h2>
               <p className="text-spa-text-light mb-8">
-                At DevPortoSpa, we believe in the healing power of touch and its profound effects on physical and mental health. Our therapeutic treatments are designed to address your specific needs.
+                No DevPortoSpa, acreditamos no poder curativo do toque e seus profundos efeitos na saúde física e mental. Nossos tratamentos terapêuticos são projetados para atender às suas necessidades específicas.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -126,14 +126,14 @@ const Index = () => {
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?q=80&w=1780&auto=format&fit=crop" 
-                alt="Woman receiving massage" 
+                alt="Mulher recebendo massagem" 
                 className="rounded-lg shadow-lg w-full"
               />
               <div className="absolute -bottom-5 -right-5 bg-spa-blue p-4 md:p-6 rounded-lg shadow-md text-white max-w-xs">
                 <p className="font-serif font-bold text-xl md:text-2xl">
-                  20+ Years
+                  +20 Anos
                 </p>
-                <p>of professional experience in wellness and massage therapy</p>
+                <p>de experiência profissional em bem-estar e terapia de massagem</p>
               </div>
             </div>
           </div>
@@ -145,10 +145,10 @@ const Index = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-spa-text mb-4">
-              What Our Clients Say
+              O Que Nossos Clientes Dizem
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Don't just take our word for it. Hear from clients who have experienced the DevPortoSpa difference.
+              Não confie apenas em nossa palavra. Ouça os clientes que experimentaram a diferença do DevPortoSpa.
             </p>
           </div>
           

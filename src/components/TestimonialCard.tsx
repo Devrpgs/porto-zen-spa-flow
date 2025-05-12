@@ -41,7 +41,7 @@ const TestimonialCard = ({ name, quote, image, rating }: TestimonialCardProps) =
           )}
           <div>
             <p className="font-medium text-spa-text">{name}</p>
-            <p className="text-sm text-spa-text-light">Verified Customer</p>
+            <p className="text-sm text-spa-text-light">Cliente Verificado</p>
           </div>
         </div>
       </div>

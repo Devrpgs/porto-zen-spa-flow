@@ -8,132 +8,132 @@ const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   
   const categories = [
-    { id: "all", label: "All Services" },
-    { id: "relaxation", label: "Relaxation" },
-    { id: "therapeutic", label: "Therapeutic" },
-    { id: "specialty", label: "Specialty" },
-    { id: "packages", label: "Packages" }
+    { id: "all", label: "Todos os Serviços" },
+    { id: "relaxation", label: "Relaxamento" },
+    { id: "therapeutic", label: "Terapêutico" },
+    { id: "specialty", label: "Especialidade" },
+    { id: "packages", label: "Pacotes" }
   ];
   
   const services = [
     {
       id: 1,
-      name: "Swedish Relaxation Massage",
-      description: "A gentle, full-body massage that uses long, flowing strokes to promote relaxation, ease muscle tension, and improve circulation.",
+      name: "Massagem de Relaxamento Sueca",
+      description: "Uma massagem suave de corpo inteiro que usa movimentos longos e fluidos para promover o relaxamento, aliviar a tensão muscular e melhorar a circulação.",
       duration: "60 min / 90 min",
       price: "€80 / €110",
       image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=1974&auto=format&fit=crop",
       category: "relaxation",
       benefits: [
-        "Reduces stress and anxiety",
-        "Improves circulation",
-        "Releases muscle tension",
-        "Enhances mental clarity"
+        "Reduz o estresse e ansiedade",
+        "Melhora a circulação",
+        "Alivia a tensão muscular",
+        "Aumenta a clareza mental"
       ]
     },
     {
       id: 2,
-      name: "Deep Tissue Massage",
-      description: "A therapeutic massage that focuses on realigning deeper layers of muscles and connective tissue. Ideal for chronic pain and contracted areas.",
+      name: "Massagem Terapêutica",
+      description: "Uma massagem terapêutica que se concentra no realinhamento de camadas mais profundas de músculos e tecido conjuntivo. Ideal para dores crônicas e áreas contraídas.",
       duration: "60 min / 90 min",
       price: "€90 / €120",
       image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1770&auto=format&fit=crop",
       category: "therapeutic",
       benefits: [
-        "Relieves chronic pain",
-        "Breaks down scar tissue",
-        "Improves posture",
-        "Increases range of motion"
+        "Alivia dores crônicas",
+        "Quebra tecido cicatricial",
+        "Melhora a postura",
+        "Aumenta a amplitude de movimento"
       ]
     },
     {
       id: 3,
-      name: "Hot Stone Therapy",
-      description: "Smooth, heated stones are placed on specific points on the body and used with massage techniques to relax and heal the body.",
+      name: "Terapia com Pedras Quentes",
+      description: "Pedras lisas e aquecidas são colocadas em pontos específicos do corpo e utilizadas com técnicas de massagem para relaxar e curar o corpo.",
       duration: "90 min",
       price: "€120",
       image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
       category: "specialty",
       benefits: [
-        "Eases muscle stiffness",
-        "Increases circulation",
-        "Reduces stress",
-        "Promotes deep relaxation"
+        "Alivia rigidez muscular",
+        "Aumenta a circulação",
+        "Reduz o estresse",
+        "Promove relaxamento profundo"
       ]
     },
     {
       id: 4,
-      name: "Aromatherapy Massage",
-      description: "Combines the power of essential oils with therapeutic massage techniques to enhance physical and emotional well-being.",
+      name: "Massagem Aromaterápica",
+      description: "Combina o poder dos óleos essenciais com técnicas de massagem terapêutica para melhorar o bem-estar físico e emocional.",
       duration: "75 min",
       price: "€95",
       image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop",
       category: "relaxation",
       benefits: [
-        "Reduces anxiety",
-        "Enhances mood",
-        "Promotes better sleep",
-        "Boosts immune system"
+        "Reduz a ansiedade",
+        "Melhora o humor",
+        "Promove um sono melhor",
+        "Fortalece o sistema imunológico"
       ]
     },
     {
       id: 5,
-      name: "Sports Massage",
-      description: "Focuses on specific muscle groups relevant to your physical activities, helping prevent injuries and improve performance.",
+      name: "Massagem Desportiva",
+      description: "Concentra-se em grupos musculares específicos relevantes para suas atividades físicas, ajudando a prevenir lesões e melhorar o desempenho.",
       duration: "60 min / 90 min",
       price: "€90 / €120",
       image: "https://images.unsplash.com/photo-1617952986600-802f965dcdbc?q=80&w=2070&auto=format&fit=crop",
       category: "therapeutic",
       benefits: [
-        "Prevents injuries",
-        "Enhances athletic performance",
-        "Reduces recovery time",
-        "Increases flexibility"
+        "Previne lesões",
+        "Melhora o desempenho atlético",
+        "Reduz o tempo de recuperação",
+        "Aumenta a flexibilidade"
       ]
     },
     {
       id: 6,
-      name: "Prenatal Massage",
-      description: "Specially designed for expectant mothers to relieve the physical discomforts of pregnancy and promote overall wellness.",
+      name: "Massagem Pré-natal",
+      description: "Especialmente concebida para futuras mães para aliviar os desconfortos físicos da gravidez e promover o bem-estar geral.",
       duration: "60 min",
       price: "€85",
       image: "https://images.unsplash.com/photo-1610824224972-db9878a2fe2c?q=80&w=2070&auto=format&fit=crop",
       category: "specialty",
       benefits: [
-        "Reduces pregnancy discomfort",
-        "Alleviates back and joint pain",
-        "Decreases swelling",
-        "Improves sleep"
+        "Reduz o desconforto da gravidez",
+        "Alivia dores nas costas e articulações",
+        "Diminui o inchaço",
+        "Melhora o sono"
       ]
     },
     {
       id: 7,
-      name: "Couples Retreat Package",
-      description: "Share a relaxing experience with a loved one. Includes side-by-side massages, aromatherapy, and complimentary champagne.",
+      name: "Pacote Retiro para Casais",
+      description: "Compartilhe uma experiência relaxante com um ente querido. Inclui massagens lado a lado, aromaterapia e champanhe complementar.",
       duration: "120 min",
       price: "€240",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
       category: "packages",
       benefits: [
-        "Strengthens relationship",
-        "Creates shared memories",
-        "Promotes relaxation",
-        "Full body rejuvenation"
+        "Fortalece o relacionamento",
+        "Cria memórias compartilhadas",
+        "Promove relaxamento",
+        "Rejuvenescimento completo"
       ]
     },
     {
       id: 8,
-      name: "Ultimate Day Spa Package",
-      description: "A complete day of pampering including a full body massage, facial, body scrub, and foot treatment with lunch included.",
-      duration: "4 hours",
+      name: "Pacote Dia de Spa Completo",
+      description: "Um dia completo de mimos, incluindo massagem corporal completa, facial, esfoliação corporal e tratamento para os pés com almoço incluído.",
+      duration: "4 horas",
       price: "€280",
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop",
       category: "packages",
       benefits: [
-        "Complete body rejuvenation",
-        "Deep relaxation",
-        "Skin revitalization",
-        "Stress elimination"
+        "Rejuvenescimento completo do corpo",
+        "Relaxamento profundo",
+        "Revitalização da pele",
+        "Eliminação do estresse"
       ]
     }
   ];
@@ -148,10 +148,10 @@ const Services = () => {
       <section className="bg-spa-blue-light py-16 md:py-24">
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-spa-text mb-4">
-            Our Services
+            Nossos Serviços
           </h1>
           <p className="text-xl text-spa-text-light max-w-3xl">
-            Discover our range of professional massage and body treatments designed to relax, rejuvenate, and restore your well-being.
+            Descubra nossa gama de massagens profissionais e tratamentos corporais projetados para relaxar, rejuvenescer e restaurar seu bem-estar.
           </p>
         </div>
       </section>
@@ -201,7 +201,7 @@ const Services = () => {
                         </p>
                         
                         <div className="mb-6">
-                          <h3 className="font-serif font-semibold text-spa-text mb-3">Benefits:</h3>
+                          <h3 className="font-serif font-semibold text-spa-text mb-3">Benefícios:</h3>
                           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                             {service.benefits.map((benefit, idx) => (
                               <li key={idx} className="flex items-start">
@@ -216,7 +216,7 @@ const Services = () => {
                           href="/contact#booking" 
                           className="btn-primary inline-block"
                         >
-                          Book Now
+                          Agendar Agora
                         </a>
                       </div>
                     </div>
@@ -234,41 +234,41 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-                Give the Gift of Relaxation
+                Dê o Presente do Relaxamento
               </h2>
               <p className="text-spa-text-light mb-6">
-                Our gift cards are perfect for birthdays, anniversaries, or just to show someone you care. Available for any service or custom amount.
+                Nossos vouchers de presente são perfeitos para aniversários, datas comemorativas ou apenas para mostrar a alguém que você se importa. Disponíveis para qualquer serviço ou valor personalizado.
               </p>
               <ul className="mb-6 space-y-3">
                 <li className="flex items-start">
                   <span className="text-spa-blue mr-2">•</span>
-                  <span className="text-spa-text-light">Valid for 12 months from purchase date</span>
+                  <span className="text-spa-text-light">Válido por 12 meses a partir da data de compra</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-spa-blue mr-2">•</span>
-                  <span className="text-spa-text-light">Elegantly packaged</span>
+                  <span className="text-spa-text-light">Elegantemente embalado</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-spa-blue mr-2">•</span>
-                  <span className="text-spa-text-light">Can be used for any service or product</span>
+                  <span className="text-spa-text-light">Pode ser usado para qualquer serviço ou produto</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-spa-blue mr-2">•</span>
-                  <span className="text-spa-text-light">Available for purchase online or in-store</span>
+                  <span className="text-spa-text-light">Disponível para compra online ou na loja</span>
                 </li>
               </ul>
               <a 
                 href="/contact" 
                 className="btn-outline inline-block"
               >
-                Purchase Gift Card
+                Comprar Vale-Presente
               </a>
             </div>
             
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1607779097040-17baf93d0d43?q=80&w=1974&auto=format&fit=crop" 
-                alt="Gift card" 
+                alt="Vale-presente" 
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute top-4 right-4 bg-white p-4 rounded-full shadow-lg">

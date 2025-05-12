@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h2 className="text-3xl font-serif font-bold mb-4">DevPorto<span className="text-spa-green-light">Spa</span></h2>
-            <p className="mb-6">A sanctuary of peace and rejuvenation where your well-being is our priority. Experience the art of relaxation.</p>
+            <p className="mb-6">Um santuário de paz e rejuvenescimento onde seu bem-estar é nossa prioridade. Experimente a arte do relaxamento.</p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" className="hover:text-spa-green-light transition-colors">
                 <Facebook size={20} />
@@ -28,52 +28,52 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="font-serif text-xl font-bold mb-4 border-b-2 border-spa-green pb-2">Quick Links</h3>
+            <h3 className="font-serif text-xl font-bold mb-4 border-b-2 border-spa-green pb-2">Links Rápidos</h3>
             <ul className="space-y-3">
               <li>
-                <NavLink to="/" className="hover:text-spa-green-light transition-colors">Home</NavLink>
+                <NavLink to="/" className="hover:text-spa-green-light transition-colors">Início</NavLink>
               </li>
               <li>
-                <NavLink to="/services" className="hover:text-spa-green-light transition-colors">Services</NavLink>
+                <NavLink to="/services" className="hover:text-spa-green-light transition-colors">Serviços</NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="hover:text-spa-green-light transition-colors">About Us</NavLink>
+                <NavLink to="/about" className="hover:text-spa-green-light transition-colors">Sobre Nós</NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="hover:text-spa-green-light transition-colors">Contact</NavLink>
+                <NavLink to="/contact" className="hover:text-spa-green-light transition-colors">Contato</NavLink>
               </li>
               <li>
-                <NavLink to="/contact#booking" className="hover:text-spa-green-light transition-colors">Book Appointment</NavLink>
+                <NavLink to="/contact#booking" className="hover:text-spa-green-light transition-colors">Agendar Consulta</NavLink>
               </li>
             </ul>
           </div>
           
           {/* Hours */}
           <div>
-            <h3 className="font-serif text-xl font-bold mb-4 border-b-2 border-spa-green pb-2">Opening Hours</h3>
+            <h3 className="font-serif text-xl font-bold mb-4 border-b-2 border-spa-green pb-2">Horário de Funcionamento</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Clock size={18} className="mr-2" /> 
-                <span>Monday - Friday: 9am - 8pm</span>
+                <span>Segunda - Sexta: 9h - 20h</span>
               </li>
               <li className="flex items-center">
                 <Clock size={18} className="mr-2" /> 
-                <span>Saturday: 10am - 6pm</span>
+                <span>Sábado: 10h - 18h</span>
               </li>
               <li className="flex items-center">
                 <Clock size={18} className="mr-2" /> 
-                <span>Sunday: 11am - 5pm</span>
+                <span>Domingo: 11h - 17h</span>
               </li>
             </ul>
           </div>
           
           {/* Contact */}
           <div>
-            <h3 className="font-serif text-xl font-bold mb-4 border-b-2 border-spa-green pb-2">Contact Us</h3>
+            <h3 className="font-serif text-xl font-bold mb-4 border-b-2 border-spa-green pb-2">Entre em Contato</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" /> 
-                <span>123 Relaxation Street, Porto, Portugal</span>
+                <span>Rua da Relaxamento 123, Porto, Portugal</span>
               </li>
               <li className="flex items-center">
                 <PhoneCall size={18} className="mr-2 flex-shrink-0" /> 
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-spa-green mt-12 pt-6 text-center">
-          <p>&copy; {currentYear} DevPortoSpa. All rights reserved.</p>
+          <p>&copy; {currentYear} DevPortoSpa. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
