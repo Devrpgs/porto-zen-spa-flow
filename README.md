@@ -1,7 +1,12 @@
-
 # DevPortoSpa - Bem-estar e Relaxamento
 
-![DevPortoSpa](https://lovable.dev/opengraph-image-p98pqg.png)
+![DevPortoSpa](/public/home-spa.png)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![Built with TypeScript](https://img.shields.io/badge/Built%20with-TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Built with Vite](https://img.shields.io/badge/Built%20with-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Styled with Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 ## Sobre o Projeto
 
@@ -102,8 +107,6 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para m
 
 ## Contato
 
-DevPortoSpa - [contato@devportospa.com](mailto:contato@devportospa.com)
+DevPortoSpa - [contato@devporto.dev](mailto:contato@devporto.dev)
 
 ---
-
-Desenvolvido com [Lovable](https://lovable.dev)

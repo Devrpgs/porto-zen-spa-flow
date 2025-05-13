@@ -254,7 +254,7 @@ const About = () => {
             
             <div className="overflow-hidden rounded-lg shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1629195896116-8a1148e0ea89?q=80&w=1975&auto=format&fit=crop" 
+                src="/public/sala.jpg" 
                 alt="Sala de tratamento" 
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />

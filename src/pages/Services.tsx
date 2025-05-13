@@ -267,7 +267,7 @@ const Services = () => {
             
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1607779097040-17baf93d0d43?q=80&w=1974&auto=format&fit=crop" 
+                src="/public/cupom.jpg" 
                 alt="Vale-presente" 
                 className="rounded-lg shadow-lg"
               />
