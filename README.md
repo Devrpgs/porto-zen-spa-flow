@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
 
-## Project info
+# DevPortoSpa - Bem-estar e Relaxamento
 
-**URL**: https://lovable.dev/projects/032996c3-1e1a-49c5-9bc0-ad5228f794b6
+![DevPortoSpa](https://lovable.dev/opengraph-image-p98pqg.png)
 
-## How can I edit this code?
+## Sobre o Projeto
 
-There are several ways of editing your application.
+DevPortoSpa é um site profissional para um spa de massagens localizado no Porto, Portugal. O site oferece informações sobre os serviços de massagem, preços, equipe profissional e possibilita o agendamento de sessões.
 
-**Use Lovable**
+## Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/032996c3-1e1a-49c5-9bc0-ad5228f794b6) and start prompting.
+Este projeto foi construído com:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Superset JavaScript com tipagem estática
+- **Vite** - Ferramenta de build rápida para desenvolvimento web
+- **React Router** - Para roteamento e navegação
+- **TailwindCSS** - Framework CSS utilitário
+- **shadcn/ui** - Componentes de UI reutilizáveis e acessíveis
 
-**Use your preferred IDE**
+## Funcionalidades
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Página Inicial** - Apresentação do spa, destaques de serviços e testemunhos de clientes
+- **Página de Serviços** - Catálogo completo de serviços e preços
+- **Página Sobre** - Informações sobre o spa e sua equipe de profissionais
+- **Página de Contato** - Formulário de contato e informações para agendamento
+- **Responsividade** - Design adaptável para dispositivos móveis e desktop
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Estrutura do Projeto
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/         # Componentes reutilizáveis
+│   ├── BookingCTA.tsx  # Componente de chamada para ação de agendamento
+│   ├── ContactForm.tsx # Formulário de contato
+│   ├── Footer.tsx      # Rodapé do site
+│   ├── Hero.tsx        # Seção principal da página inicial
+│   ├── Navbar.tsx      # Barra de navegação
+│   ├── ServiceCard.tsx # Card para exibição de serviços
+│   ├── TeamMember.tsx  # Card para membros da equipe
+│   └── ui/             # Componentes de UI do shadcn
+├── hooks/              # Hooks personalizados
+├── lib/                # Utilitários e funções auxiliares
+├── pages/              # Páginas do site
+│   ├── About.tsx       # Página Sobre
+│   ├── Contact.tsx     # Página de Contato
+│   ├── Index.tsx       # Página Inicial
+│   ├── NotFound.tsx    # Página 404
+│   └── Services.tsx    # Página de Serviços
+├── App.tsx             # Componente principal do aplicativo
+└── main.tsx            # Ponto de entrada da aplicação
 ```
 
-**Edit a file directly in GitHub**
+## Iniciando o Desenvolvimento
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Pré-requisitos
 
-**Use GitHub Codespaces**
+- Node.js (v16+)
+- npm ou yarn
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Instalação
 
-## What technologies are used for this project?
+1. Clone o repositório:
+   ```sh
+   git clone <URL_DO_REPOSITÓRIO>
+   cd devportospa
+   ```
 
-This project is built with:
+2. Instale as dependências:
+   ```sh
+   npm install
+   # ou
+   yarn
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-## How can I deploy this project?
+4. Acesse `http://localhost:8080` no seu navegador
 
-Simply open [Lovable](https://lovable.dev/projects/032996c3-1e1a-49c5-9bc0-ad5228f794b6) and click on Share -> Publish.
+## Build para Produção
 
-## Can I connect a custom domain to my Lovable project?
+Para criar uma versão de produção otimizada:
 
-Yes, you can!
+```sh
+npm run build
+# ou
+yarn build
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Implantação
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Após o build, a pasta `dist` conterá todos os arquivos estáticos necessários para implantação em qualquer servidor web ou plataforma de hospedagem.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
+
+## Contato
+
+DevPortoSpa - [contato@devportospa.com](mailto:contato@devportospa.com)
+
+---
+
+Desenvolvido com [Lovable](https://lovable.dev)
