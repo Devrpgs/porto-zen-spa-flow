@@ -12,7 +12,7 @@ const Index = () => {
       description: "Movimentos suaves projetados para relaxar seus músculos e mente, aliviando a tensão e promovendo o bem-estar geral.",
       image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=1974&auto=format&fit=crop",
       duration: "60 min",
-      price: "€80",
+      price: "R$ 80",
       link: "/services"
     },
     {
@@ -20,7 +20,7 @@ const Index = () => {
       description: "Atinge camadas mais profundas dos músculos para tratar dores crônicas e tensão, ideal para aqueles com problemas musculares persistentes.",
       image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1770&auto=format&fit=crop",
       duration: "75 min",
-      price: "€95",
+      price: "R$ 95",
       link: "/services"
     },
     {
@@ -28,7 +28,7 @@ const Index = () => {
       description: "Utiliza pedras aquecidas para aumentar o relaxamento, aliviar a tensão muscular e melhorar o fluxo sanguíneo por todo o corpo.",
       image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
       duration: "90 min",
-      price: "€110",
+      price: "R$ 110",
       link: "/services"
     }
   ];
