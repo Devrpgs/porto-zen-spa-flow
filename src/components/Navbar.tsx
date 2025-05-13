@@ -69,7 +69,7 @@ const Navbar = () => {
           ))}
           <NavLink 
             to="/contact#booking" 
-            className={`${isHomePage && !isScrolled ? 'bg-spa-blue-dark hover:bg-opacity-90 text-white' : 'btn-primary'} transition-all duration-300`}
+            className="btn-primary rounded-md py-2 px-4"
           >
             Agendar
           </NavLink>
@@ -104,7 +104,7 @@ const Navbar = () => {
             ))}
             <NavLink 
               to="/contact#booking" 
-              className={`${isHomePage ? 'bg-spa-blue-dark hover:bg-opacity-90 text-white' : 'btn-primary'} text-center`}
+              className="btn-primary text-center"
               onClick={() => setIsOpen(false)}
             >
               Agendar
