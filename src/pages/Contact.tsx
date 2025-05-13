@@ -21,10 +21,10 @@ const Contact = () => {
       <section className="bg-spa-blue-light py-16 md:py-24">
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-spa-text mb-4">
-            Contact Us
+            Contato
           </h1>
           <p className="text-xl text-spa-text-light max-w-3xl">
-            Reach out to us for appointments, questions, or feedback. We're here to help you on your journey to wellness.
+            Entre em contato conosco para agendamentos, dúvidas ou feedback. Estamos aqui para ajudá-lo em sua jornada de bem-estar.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
             <div>
               <h2 className="text-3xl font-serif font-bold text-spa-text mb-6">
-                Get in Touch
+                Fale Conosco
               </h2>
               
               <div className="space-y-6 mb-8">
@@ -44,9 +44,9 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-spa-blue-dark" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-spa-text mb-1">Address</h3>
+                    <h3 className="font-medium text-spa-text mb-1">Endereço</h3>
                     <p className="text-spa-text-light">
-                      123 Relaxation Street<br />
+                      Rua da Relaxamento, 123<br />
                       Porto, 4000-123<br />
                       Portugal
                     </p>
@@ -58,7 +58,7 @@ const Contact = () => {
                     <PhoneCall className="h-6 w-6 text-spa-blue-dark" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-spa-text mb-1">Phone</h3>
+                    <h3 className="font-medium text-spa-text mb-1">Telefone</h3>
                     <p className="text-spa-text-light">+351 123 456 789</p>
                     <p className="text-spa-text-light">+351 987 654 321</p>
                   </div>
@@ -71,7 +71,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-medium text-spa-text mb-1">Email</h3>
                     <p className="text-spa-text-light">info@devportospa.com</p>
-                    <p className="text-spa-text-light">bookings@devportospa.com</p>
+                    <p className="text-spa-text-light">agendamentos@devportospa.com</p>
                   </div>
                 </div>
                 
@@ -80,15 +80,15 @@ const Contact = () => {
                     <Clock className="h-6 w-6 text-spa-blue-dark" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-spa-text mb-1">Opening Hours</h3>
+                    <h3 className="font-medium text-spa-text mb-1">Horário de Funcionamento</h3>
                     <div className="text-spa-text-light">
                       <div className="grid grid-cols-2 gap-2">
-                        <span>Monday - Friday:</span>
-                        <span>9am - 8pm</span>
-                        <span>Saturday:</span>
-                        <span>10am - 6pm</span>
-                        <span>Sunday:</span>
-                        <span>11am - 5pm</span>
+                        <span>Segunda a Sexta:</span>
+                        <span>9h - 20h</span>
+                        <span>Sábado:</span>
+                        <span>10h - 18h</span>
+                        <span>Domingo:</span>
+                        <span>11h - 17h</span>
                       </div>
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <h3 className="font-serif font-semibold text-xl text-spa-text mb-4">Follow Us</h3>
+                <h3 className="font-serif font-semibold text-xl text-spa-text mb-4">Siga-nos</h3>
                 <div className="flex space-x-4">
                   <a 
                     href="https://facebook.com" 
@@ -128,7 +128,7 @@ const Contact = () => {
             
             <div>
               <h2 className="text-3xl font-serif font-bold text-spa-text mb-6">
-                Send Us a Message
+                Envie uma Mensagem
               </h2>
               <ContactForm />
             </div>
@@ -148,7 +148,7 @@ const Contact = () => {
               allowFullScreen 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="DevPortoSpa location"
+              title="DevPortoSpa localização"
             ></iframe>
           </div>
         </div>
@@ -159,38 +159,38 @@ const Contact = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-              Book Your Appointment
+              Agende sua Visita
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Choose your preferred method to book a session with our expert therapists.
+              Escolha seu método preferido para agendar uma sessão com nossos terapeutas especializados.
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <Tabs defaultValue="phone">
               <TabsList className="mb-8 w-full">
-                <TabsTrigger value="phone" className="w-1/3">Phone</TabsTrigger>
-                <TabsTrigger value="form" className="w-1/3">Online Form</TabsTrigger>
+                <TabsTrigger value="phone" className="w-1/3">Telefone</TabsTrigger>
+                <TabsTrigger value="form" className="w-1/3">Formulário Online</TabsTrigger>
                 <TabsTrigger value="email" className="w-1/3">Email</TabsTrigger>
               </TabsList>
               
               <TabsContent value="phone" className="space-y-4">
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="font-serif font-semibold text-xl text-spa-text mb-3">
-                    Book by Phone
+                    Agende por Telefone
                   </h3>
                   <p className="text-spa-text-light mb-4">
-                    Call us directly to speak with our receptionist who will help you select the perfect treatment and schedule your appointment.
+                    Ligue diretamente para falar com nossa recepcionista, que irá ajudá-lo a selecionar o tratamento perfeito e agendar sua visita.
                   </p>
                   <div className="flex items-center text-lg font-medium text-spa-blue">
                     <PhoneCall className="h-5 w-5 mr-2" />
                     +351 123 456 789
                   </div>
                   <p className="text-spa-text-light mt-4">
-                    Available during our opening hours:<br />
-                    Monday - Friday: 9am - 8pm<br />
-                    Saturday: 10am - 6pm<br />
-                    Sunday: 11am - 5pm
+                    Disponível durante nosso horário de funcionamento:<br />
+                    Segunda a Sexta: 9h - 20h<br />
+                    Sábado: 10h - 18h<br />
+                    Domingo: 11h - 17h
                   </p>
                 </div>
               </TabsContent>
@@ -198,15 +198,15 @@ const Contact = () => {
               <TabsContent value="form" className="space-y-4">
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="font-serif font-semibold text-xl text-spa-text mb-4">
-                    Online Booking Form
+                    Formulário de Agendamento Online
                   </h3>
                   <p className="text-spa-text-light mb-6">
-                    Complete the form below and we'll contact you to confirm your appointment.
+                    Preencha o formulário abaixo e entraremos em contato para confirmar seu agendamento.
                   </p>
                   
                   <div className="text-center my-12">
                     <p className="text-spa-text-light italic">
-                      Online booking form coming soon! For now, please call us or send an email to book your appointment.
+                      Formulário de agendamento online em breve! Por enquanto, por favor, ligue para nós ou envie um email para agendar sua visita.
                     </p>
                   </div>
                 </div>
@@ -215,24 +215,24 @@ const Contact = () => {
               <TabsContent value="email" className="space-y-4">
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="font-serif font-semibold text-xl text-spa-text mb-3">
-                    Book by Email
+                    Agende por Email
                   </h3>
                   <p className="text-spa-text-light mb-4">
-                    Send us an email with your preferred date, time, and treatment, and we'll get back to you within 24 hours to confirm your appointment.
+                    Envie-nos um email com sua data, horário e tratamento preferidos, e responderemos em até 24 horas para confirmar seu agendamento.
                   </p>
                   <div className="flex items-center text-lg font-medium text-spa-blue">
                     <Mail className="h-5 w-5 mr-2" />
-                    bookings@devportospa.com
+                    agendamentos@devportospa.com
                   </div>
                   <p className="text-spa-text-light mt-4">
-                    Please include the following information:
+                    Por favor, inclua as seguintes informações:
                   </p>
                   <ul className="list-disc list-inside text-spa-text-light ml-4 mt-2">
-                    <li>Your name</li>
-                    <li>Contact phone number</li>
-                    <li>Preferred treatment</li>
-                    <li>Preferred date and time</li>
-                    <li>Any special requirements</li>
+                    <li>Seu nome</li>
+                    <li>Número de telefone para contato</li>
+                    <li>Tratamento desejado</li>
+                    <li>Data e hora preferidas</li>
+                    <li>Quaisquer requisitos especiais</li>
                   </ul>
                 </div>
               </TabsContent>
@@ -246,32 +246,32 @@ const Contact = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-spa-text mb-4">
-              Frequently Asked Questions
+              Perguntas Frequentes
             </h2>
             <p className="text-spa-text-light max-w-2xl mx-auto">
-              Find answers to common questions about our services and policies.
+              Encontre respostas para perguntas comuns sobre nossos serviços e políticas.
             </p>
           </div>
           
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="bg-spa-neutral p-6 rounded-lg">
-              <h3 className="font-serif font-semibold text-spa-text mb-2">How early should I arrive for my appointment?</h3>
-              <p className="text-spa-text-light">We recommend arriving 15 minutes before your scheduled appointment to complete any paperwork and begin your relaxation journey.</p>
+              <h3 className="font-serif font-semibold text-spa-text mb-2">Com que antecedência devo chegar para minha consulta?</h3>
+              <p className="text-spa-text-light">Recomendamos chegar 15 minutos antes do horário agendado para preencher qualquer documentação e começar sua jornada de relaxamento.</p>
             </div>
             
             <div className="bg-spa-neutral p-6 rounded-lg">
-              <h3 className="font-serif font-semibold text-spa-text mb-2">What is your cancellation policy?</h3>
-              <p className="text-spa-text-light">Please provide at least 24 hours' notice for cancellations to avoid a cancellation fee. We understand that emergencies happen, so please contact us as soon as possible.</p>
+              <h3 className="font-serif font-semibold text-spa-text mb-2">Qual é a política de cancelamento?</h3>
+              <p className="text-spa-text-light">Solicitamos um aviso de pelo menos 24 horas para cancelamentos, para evitar uma taxa de cancelamento. Entendemos que emergências acontecem, então entre em contato o mais rápido possível.</p>
             </div>
             
             <div className="bg-spa-neutral p-6 rounded-lg">
-              <h3 className="font-serif font-semibold text-spa-text mb-2">Do you offer gift cards?</h3>
-              <p className="text-spa-text-light">Yes, we offer gift cards for all our services. They can be purchased in-person or by contacting us directly.</p>
+              <h3 className="font-serif font-semibold text-spa-text mb-2">Vocês oferecem vale-presentes?</h3>
+              <p className="text-spa-text-light">Sim, oferecemos vale-presentes para todos os nossos serviços. Eles podem ser adquiridos pessoalmente ou entrando em contato conosco diretamente.</p>
             </div>
             
             <div className="bg-spa-neutral p-6 rounded-lg">
-              <h3 className="font-serif font-semibold text-spa-text mb-2">What should I wear during my massage?</h3>
-              <p className="text-spa-text-light">You'll be properly draped during your massage. Undress to your comfort level. Our therapists are trained in professional draping techniques to ensure your privacy and comfort.</p>
+              <h3 className="font-serif font-semibold text-spa-text mb-2">O que devo vestir durante minha massagem?</h3>
+              <p className="text-spa-text-light">Você será adequadamente coberto durante sua massagem. Despe-se ao seu nível de conforto. Nossos terapeutas são treinados em técnicas profissionais de cobertura para garantir sua privacidade e conforto.</p>
             </div>
           </div>
         </div>

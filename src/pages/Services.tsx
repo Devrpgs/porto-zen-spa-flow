@@ -21,7 +21,7 @@ const Services = () => {
       name: "Massagem de Relaxamento Sueca",
       description: "Uma massagem suave de corpo inteiro que usa movimentos longos e fluidos para promover o relaxamento, aliviar a tensão muscular e melhorar a circulação.",
       duration: "60 min / 90 min",
-      price: "€80 / €110",
+      price: "R$ 80 / R$ 110",
       image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=1974&auto=format&fit=crop",
       category: "relaxation",
       benefits: [
@@ -36,7 +36,7 @@ const Services = () => {
       name: "Massagem Terapêutica",
       description: "Uma massagem terapêutica que se concentra no realinhamento de camadas mais profundas de músculos e tecido conjuntivo. Ideal para dores crônicas e áreas contraídas.",
       duration: "60 min / 90 min",
-      price: "€90 / €120",
+      price: "R$ 90 / R$ 120",
       image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1770&auto=format&fit=crop",
       category: "therapeutic",
       benefits: [
@@ -51,7 +51,7 @@ const Services = () => {
       name: "Terapia com Pedras Quentes",
       description: "Pedras lisas e aquecidas são colocadas em pontos específicos do corpo e utilizadas com técnicas de massagem para relaxar e curar o corpo.",
       duration: "90 min",
-      price: "€120",
+      price: "R$ 120",
       image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
       category: "specialty",
       benefits: [
@@ -66,7 +66,7 @@ const Services = () => {
       name: "Massagem Aromaterápica",
       description: "Combina o poder dos óleos essenciais com técnicas de massagem terapêutica para melhorar o bem-estar físico e emocional.",
       duration: "75 min",
-      price: "€95",
+      price: "R$ 95",
       image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop",
       category: "relaxation",
       benefits: [
@@ -81,7 +81,7 @@ const Services = () => {
       name: "Massagem Desportiva",
       description: "Concentra-se em grupos musculares específicos relevantes para suas atividades físicas, ajudando a prevenir lesões e melhorar o desempenho.",
       duration: "60 min / 90 min",
-      price: "€90 / €120",
+      price: "R$ 90 / R$ 120",
       image: "https://images.unsplash.com/photo-1617952986600-802f965dcdbc?q=80&w=2070&auto=format&fit=crop",
       category: "therapeutic",
       benefits: [
@@ -96,7 +96,7 @@ const Services = () => {
       name: "Massagem Pré-natal",
       description: "Especialmente concebida para futuras mães para aliviar os desconfortos físicos da gravidez e promover o bem-estar geral.",
       duration: "60 min",
-      price: "€85",
+      price: "R$ 85",
       image: "https://images.unsplash.com/photo-1610824224972-db9878a2fe2c?q=80&w=2070&auto=format&fit=crop",
       category: "specialty",
       benefits: [
@@ -111,7 +111,7 @@ const Services = () => {
       name: "Pacote Retiro para Casais",
       description: "Compartilhe uma experiência relaxante com um ente querido. Inclui massagens lado a lado, aromaterapia e champanhe complementar.",
       duration: "120 min",
-      price: "€240",
+      price: "R$ 240",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
       category: "packages",
       benefits: [
@@ -126,7 +126,7 @@ const Services = () => {
       name: "Pacote Dia de Spa Completo",
       description: "Um dia completo de mimos, incluindo massagem corporal completa, facial, esfoliação corporal e tratamento para os pés com almoço incluído.",
       duration: "4 horas",
-      price: "€280",
+      price: "R$ 280",
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop",
       category: "packages",
       benefits: [
